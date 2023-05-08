@@ -1,0 +1,133 @@
+body {
+    background-color: #537FE7;
+    font-family: 'Fredoka One', cursive;
+    color: aliceblue;
+}
+
+/* score card */
+
+.score-card{
+    margin: 15px 0px;
+}
+
+.name, .score {
+    font-size: 35px;
+}
+
+.player1 {
+ color: #FF7B54;
+}
+
+.player2 {
+    color: #F7D060;
+}
+
+/* tic tac toe */
+
+.tic-tac-toe {
+    max-width: 600px;
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    border: solid 4px white;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 190px;
+    cursor: pointer;
+    font-size: 130px;
+}
+
+.row1 {
+    border-top: none;
+}
+
+.row1Column1, .row2Column1, .row3Column1 {
+    border-left: none;
+}
+
+.row1Column3, .row2Column3, .row3Column3 {
+    border-right: none;
+}
+
+.row3 {
+    border-bottom: none;
+}
+
+@media (max-width: 800px) {
+    .name, .score {
+        font-size: 28px;
+    }
+
+    .tic-tac-toe {
+        max-width: 450px;
+    }
+
+    .row1, .row2, .row3 {
+        height: 160px;
+        width: 160px;
+        font-size: 110px;
+    }
+
+    .score-card{
+        margin: 15px 0px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .name, .score {
+        font-size: 20px;
+    }
+
+    .tic-tac-toe {
+        max-width: 400px;
+    }
+
+    .row1, .row2, .row3 {
+        height: 140px;
+        width: 140px;
+        font-size: 90px;
+    }
+
+    .score-card{
+        margin: 20px 0px 45px;
+    }
+}
+
+@media (max-width: 440px) {
+    .tic-tac-toe {
+        max-width: 360px;
+    }
+
+    .row1, .row2, .row3 {
+        height: 120px;
+        width: 120px;
+        font-size: 80px;
+    }
+
+    .score-card{
+        margin: 20px 0px 45px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .name, .score {
+        font-size: 14px;
+    }
+
+    .tic-tac-toe {
+        max-width: 320px;
+    }
+
+    .row1, .row2, .row3 {
+        height: 110px;
+        width: 110px;
+        font-size: 70px;
+    }
+
+    .score-card{
+        margin: 25px 0px 50px;
+    }
+}
